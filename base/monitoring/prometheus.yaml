@@ -10,10 +10,11 @@ spec:
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: 
+    namespace: monitoring
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
       - Validate=false
+      - CreateNamespace=true

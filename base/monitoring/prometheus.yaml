@@ -6,8 +6,9 @@ metadata:
 spec:
   project: infra
   source:
-    helm:
-
+    repoURL: 'https://prometheus-community.github.io/helm-charts'
+    targetRevision: 14.6.0
+    chart: prometheus
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
